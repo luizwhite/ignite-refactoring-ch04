@@ -15,8 +15,8 @@ interface FoodInterface {
 
 interface FoodProps {
   food: FoodInterface;
-  handleEditFood: (food: FoodInterface) => Promise<void>;
-  handleDelete: (id: number) => void;
+  handleEditFood: (food: FoodInterface) => void;
+  handleDelete: (id: number) => Promise<void>;
 }
 
 const Food: React.FC<FoodProps> = ({
