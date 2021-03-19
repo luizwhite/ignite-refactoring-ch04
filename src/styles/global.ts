@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
+const styled = { createGlobalStyle };
+
+export default styled.createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -10,16 +12,24 @@ export default createGlobalStyle`
 
   body {
     background: #fff;
-    color: #FFF;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
   }
 
-  body, input, button {
+  body,
+  input,
+  button {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
   }
 
-  h1, h2, h3, h4, h5, h6, strong {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
     font-weight: 500;
   }
 
